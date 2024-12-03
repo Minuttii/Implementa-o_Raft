@@ -1,0 +1,35 @@
+RESULTS: 
+TESTE: test_leader_election
+
+[Nó 0]: Estado inicializado como SEGUIDOR.
+[Nó 1]: Estado inicializado como SEGUIDOR.
+[Nó 2]: Estado inicializado como SEGUIDOR.
+[Nó 3]: Estado inicializado como SEGUIDOR.
+[Nó 4]: Estado inicializado como SEGUIDOR.
+[Nó 2]: Tempo limite expirado, tornando-se CANDIDATO. Solicitando votos.
+[Nó 0]: Recebido pedido de voto do Nó 2. Votando a favor.
+[Nó 1]: Recebido pedido de voto do Nó 2. Votando a favor.
+[Nó 3]: Recebido pedido de voto do Nó 2. Votando a favor.
+[Nó 4]: Recebido pedido de voto do Nó 2. Votando a favor.
+[Nó 2]: Obteve maioria. Tornando-se LÍDER.
+
+Passou no Teste: Um único líder foi eleito: Nó 2
+
+TESTE: test_fail_and_recover_node
+
+[Nó 2]: Falha simulada. Nó inativo.
+[Nó 1]: Líder enviando batimentos cardíacos.
+[Nó 2]: Recuperado. Estado restaurado para SEGUIDOR.
+[Nó 1]: Líder enviando batimentos cardíacos. Nó 2 sincronizado novamente.
+
+Nó 2 foi desativado e identificado como inativo
+
+TESTE: test_consensus_with_failures
+
+[Nó 3]: Falha simulada. Nó inativo.
+[Nó 1]: Líder detectado. Continuando a enviar batimentos cardíacos.
+[Nó 0]: Recebido batimento cardíaco do líder Nó 1.
+[Nó 2]: Recebido batimento cardíaco do líder Nó 1.
+[Nó 4]: Recebido batimento cardíaco do líder Nó 1.
+
+Mesmo com a falha do Nó 3, o cluster manteve o consenso e o Nó 1 continuou como líder.
