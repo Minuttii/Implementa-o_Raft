@@ -61,7 +61,6 @@ Organização do Repositório
 Estrutura projetada:
 
  README.md                   Instruções detalhadas
- requirements.txt            Dependências (se necessário)
  raft_node.py                Código do nó individual
  raft_cluster.py             Gerenciamento do cluster
  test_raft.py                Testes automatizados
