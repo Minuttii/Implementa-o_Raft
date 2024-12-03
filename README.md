@@ -64,7 +64,7 @@ Estrutura projetada:
  raft_node.py                Código do nó individual
  raft_cluster.py             Gerenciamento do cluster
  test_raft.py                Testes automatizados
- raft_logs.txt               Logs das execuções
+ tests.txt               Logs das execuções
 
 Principais componentes requisitados:
 
