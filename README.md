@@ -60,11 +60,11 @@ Organização do Repositório
 
 Estrutura projetada:
 
- README.md                   Instruções detalhadas
- raft_node.py                Código do nó individual
- raft_cluster.py             Gerenciamento do cluster
- test_raft.py                Testes automatizados
- tests.txt               Logs das execuções
+ README.md                   Instruções detalhadas /
+ raft_node.py                Código do nó individual /
+ raft_cluster.py             Gerenciamento do cluster /
+ test_raft.py                Testes automatizados /
+ tests.txt               Logs das execuções /
 
 Principais componentes requisitados:
 
